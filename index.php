@@ -76,9 +76,9 @@
 
     function generate($length = 12, $letters = '1234567890qwertuiopasdfghjklxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM') {
         $s = '';
-        $lettersLength = strlen($letters)-1;
+        $lettersLength = strlen($letters) - 1;
         for($i = 0 ; $i < $length ; $i++) {
-        $s .= $letters[rand(0,$lettersLength)];
+            $s .= $letters[rand(0, $lettersLength)];
         }
         return $s;
     }
@@ -87,7 +87,7 @@
     $s = '';
     $count = 12;
     if (isset($_GET["c"])) {
-        $count = min(1,max(intval($_GET["c"],128)));
+        $count = min(max(1, intval($_GET["c"])), 64);
     }
     $s = generate($count);
 
