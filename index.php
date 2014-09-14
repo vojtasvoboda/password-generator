@@ -7,9 +7,10 @@
 
 	<meta name="keywords" content="generator,hesel,hesla" />
 	<meta name="description" content="Generátor hesel, pomocí kterého si můžete vygenerovat silné heslo." />
-	<meta name="copyright" content="Vojtěch Svoboda; mailto:info@vojtasvoboda.cz" />
+	<meta name="copyright" content="Vojtěch Svoboda; mailto:vojtasvoboda.cz@gmail.com" />
+    <meta name="viewport" content="width=device-width">
 	<meta name="distribution" content="global" />
-	<meta name="author" content="Vojta Svoboda; mailto:info@vojtasvoboda.cz" />
+	<meta name="author" content="Vojta Svoboda; mailto:vojtasvoboda.cz@gmail.com" />
 	<meta name="language" content="Czech" />
 	<meta name='robots' content='all,follow' />
 	<meta name="rating" content="general" />
@@ -20,22 +21,31 @@
 	<style>
         @charset "utf-8";
         html,body,p,form,img,table,tr,th,td,h1,h2,h3,div { border: 0 none; margin: 0; padding: 0; }
-        body { font-family: Verdana, Arial, Tahoma, sans-serif; }
-        h3 { text-align: center; font-size: 280%; font-weight: normal; margin: 7% 0 4% 0; }
-        p { text-align: center; color: #888; font-size: 75% }
-        p.info { margin-bottom: 5px; }
-        p.light a { color: #bbb; }
+        body { font-family: Consolas, 'Liberation Mono', Courier, monospace; }
+        h3 { text-align: center; font-size: 230%; font-weight: normal; margin: 7% 0; }
+        p { text-align: center; color: #888; font-size: 75%; }
         a { border: none; color: #888; text-decoration: none; }
         a:hover { text-decoration: underline }
+        p.info { margin-bottom: 5px; }
+        p.light a { color: #bbb; }
         #content { font-size: 1%; color: #fff; text-indent: -9999px; width: 100%; height: 1px; }
-        #button { text-align: center; margin-bottom: 20px; }
+        #wrapper { margin: 0 20px; }
+        #button { text-align: center; margin-bottom: 7%; }
         #button a {
-            display: block; margin: 0 auto; padding: 15px 30px; width: 140px;
+            display: block; margin: 0 auto; padding: 20px 0 15px 0; width: 200px;
             background-color: #bae88b; color: #000; border: 1px solid #80ab30;
             -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
             font-size: 150%; text-align: center;
         }
         #button a:hover { text-decoration: none; }
+        @media (min-width: 500px) {
+            h3 { margin: 7% 0 6% 0; font-size: 260%; }
+            #button { margin-bottom: 30px; }
+        }
+        @media (min-width: 800px) {
+            h3 { margin: 7% 0 3% 0; font-size: 300%; }
+            #button { margin-bottom: 30px; }
+        }
     </style>
 
     <script>
