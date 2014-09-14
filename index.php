@@ -38,13 +38,12 @@
             font-size: 150%; text-align: center;
         }
         #button a:hover { text-decoration: none; }
-        @media (min-width: 500px) {
-            h3 { margin: 7% 0 6% 0; font-size: 260%; }
+        @media (min-width: 600px) {
+            h3 { margin: 7% 0 30px 0; font-size: 260%; }
             #button { margin-bottom: 30px; }
         }
-        @media (min-width: 800px) {
-            h3 { margin: 7% 0 3% 0; font-size: 300%; }
-            #button { margin-bottom: 30px; }
+        @media (min-width: 900px) {
+            h3 { font-size: 300%; }
         }
     </style>
 
