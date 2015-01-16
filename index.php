@@ -38,9 +38,11 @@
             font-size: 150%; text-align: center;
         }
         #button a:hover { text-decoration: none; }
+        #badge { display: none; }
         @media (min-width: 600px) {
             h3 { margin: 7% 0 30px 0; font-size: 260%; }
             #button { margin-bottom: 30px; }
+            #badge { display: block; position: absolute; top: 0; right: 0; }
         }
         @media (min-width: 900px) {
             h3 { font-size: 300%; }
@@ -112,6 +114,12 @@
         <p class="light"><a href="http://www.vojtasvoboda.cz/" title="Vojta Svoboda">vojta svoboda</a> &#124; <a href="https://plus.google.com/+VojtaSvoboda?rel=author" rel="author me">g+</a></p>
 
     </div><!-- /#wrapper -->
+
+    <div id="badge">
+        <a href="https://github.com/vojtasvoboda/password-generator" rel="nofollow">
+            <img src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+    </div>
 
 </body>
 </html>
