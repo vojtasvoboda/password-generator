@@ -2,7 +2,7 @@
 <html class="no-js" lang="cs">
 
 <head>
-  	<meta charset="utf-8">
+    <meta charset="utf-8">
 	<title>Generátor hesel - vygeneruj si silné heslo!</title>
 
 	<meta name="keywords" content="generator,hesel,hesla" />
@@ -28,7 +28,7 @@
         a:hover { text-decoration: underline }
         p.info { margin-bottom: 5px; }
         p.light a { color: #bbb; }
-        #content { font-size: 1%; color: #fff; text-indent: -9999px; width: 100%; height: 1px; }
+        #content { text-indent: -9999px; width: 100%; height: 1px; }
         #wrapper { margin: 0 20px; }
         #button { text-align: center; margin-bottom: 7%; }
         #button a {
@@ -47,18 +47,19 @@
         }
     </style>
 
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-30324249-2', 'auto');
-        ga('send', 'pageview');
-    </script>
-
 </head>
 
 <body>
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WWJX2Q"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WWJX2Q');</script>
+    <!-- End Google Tag Manager -->
 
     <div id="content">
         <h1>Generátor hesel</h1>
@@ -68,7 +69,7 @@
         <h2>Generování silného hesla</h2>
         <p>Pro generování hesla můžete využít tlačítko níže na této stránce.</p>
         <h2>Změna délky generovaného řetězce</h2>
-        <p>Změnu délky generovaného řetězce provedete změnou paramtru v URL adrese. Například http://gen.vojtasvoboda.cz/?c=20 pro generování hesla, které bude mít 20 znaků.</p>
+        <p>Změnu délky generovaného řetězce provedete změnou paramtru v URL adrese. Například http://gen.7ka.cz/?c=20 pro generování hesla, které bude mít 20 znaků.</p>
     </div>
 
     <?php
@@ -97,12 +98,12 @@
         <h3 title="vygenerované heslo - pro zkopírování stačí dvakrát kliknout a Ctrl+C"><?=$s?></h3>
 
         <p id="button">
-            <a href="/<?php if(isset($_GET["c"])) { echo "?c=" . $count; }?>">Generuj&nbsp;heslo!</a>
+            <a href="/<?php if($count!=12) { echo "?c=" . $count; }?>">Generuj&nbsp;heslo!</a>
         </p>
 
         <p class="info">
         <?php
-        if (isset($_GET["c"])) {
+        if ($count!=12) {
             echo "<a href=\"/?c=" . $count . "\">délku lze změnit parametrem v URL</a>";
         } else {
             echo "<a href=\"/?c=20\" title=\"změnit délku hesla\">změnit délku hesla</a>";
@@ -110,7 +111,7 @@
         ?> &#124; <a href="http://hasher.7ka.cz/?p=<?=$s;?>">zobrazit hash hesla</a></p>
         <p class="light"><a href="http://www.vojtasvoboda.cz/" title="Vojta Svoboda">vojta svoboda</a> &#124; <a href="https://plus.google.com/+VojtaSvoboda?rel=author" rel="author me">g+</a></p>
 
-    </div><!-- end of DIVu wrapper -->
+    </div><!-- /#wrapper -->
 
 </body>
 </html>
