@@ -111,7 +111,7 @@
             echo "<a href=\"/?c=20\" title=\"změnit délku hesla\">změnit délku hesla</a>";
         }
         ?> &#124; <a href="http://hasher.7ka.cz/?p=<?=$s;?>">zobrazit hash hesla</a></p>
-        <p class="light"><a href="http://www.vojtasvoboda.cz/" title="Vojta Svoboda">vojta svoboda</a> &#124; <a href="https://plus.google.com/+VojtaSvoboda?rel=author" rel="author me">g+</a></p>
+        <p class="light"><a href="https://www.vojtasvoboda.cz/" title="Vojta Svoboda">vojta svoboda</a> &#124; <a href="https://plus.google.com/+VojtaSvoboda?rel=author" rel="author me">g+</a></p>
 
     </div><!-- /#wrapper -->
 
